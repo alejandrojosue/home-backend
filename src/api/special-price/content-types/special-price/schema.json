@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_prices",
+  "info": {
+    "singularName": "special-price",
+    "pluralName": "special-prices",
+    "displayName": "SpecialPrice"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::customer.customer"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

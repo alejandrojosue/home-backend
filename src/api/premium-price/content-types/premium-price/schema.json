@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_prices",
+  "info": {
+    "singularName": "premium-price",
+    "pluralName": "premium-prices",
+    "displayName": "PremiumPrice"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
